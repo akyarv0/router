@@ -1,27 +1,27 @@
 //*****************************************************
 //*   FOOTER
 //*****************************************************
-@use '../abstracts/mixins';
-@use '../abstracts/variables';
+
 .link-style{
     a{
         padding: 0.4rem;
-        @include mixins.soft(1s);
+        @include transition(1s);
+
         &:hover{
-            color: variables.$secondary-color;
+            color: $secondary-color;
         }
     }
 }
 
-
 footer.horizontal{
     // border: 2px solid red;
     height: 10vh;
-    display: flex;
+    display:flex ;
     justify-content: space-between;
     align-items: flex-end;
     padding: 1rem;
     @extend .link-style;
+
 }
 
 footer.vertical{
@@ -30,23 +30,20 @@ footer.vertical{
     justify-content: space-between;
     align-items: flex-end;
     padding: 2rem;
-
     .social-icons{
         display: flex;
         flex-direction: column;
         position: fixed;
         bottom: 1rem;
         @extend .link-style;
-
     }
     .copyright{
         position: fixed;
-        right: 1rem;
         bottom: 1rem;
-        // transform: rotate(90deg) translate(-3rem, -1rem);
+        right: 3rem;
+        // transform: rotate(90deg) translate(-3rem, -5rem);
         writing-mode: vertical-lr;
     }
-
 }
 
 footer.middle{
@@ -56,7 +53,7 @@ footer.middle{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
     padding: 1rem;
+    gap: 1rem;
     @extend .link-style;
 }
