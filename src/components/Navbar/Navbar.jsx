@@ -1,28 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './_nav.scss'
 
+import './_nav.scss'; // Navbar bileşeni için özel SCSS dosyası
 
-
-
-function Navbar() {
+const Navbar = () => {
   return (
-    <div>
-    <ul class="nav__list">
-    <li class="nav__item">
-        <a href="index.html" class="nav__link nav__link--active">Home</a>
-    </li>
-    <li class="nav__item">
-        <a href="about.html" class="nav__link">About Me</a>
-    </li>
-    <li class="nav__item">
-        <a href="projects.html" class="nav__link">My Project</a>
-    </li>
-    <li class="nav__item">
-        <a href="contact.html" class="nav__link">Contact</a>
-    </li>
-</ul>
-    </div>
+<nav className="nav">
+      <ul className="nav__list"> {/* Nav linklerini bir liste olarak gruplayın */}
+        <li className="nav__item">
+          <NavLink to="/" className="nav__link home-nav">Home</NavLink>
+        </li>
+        <li className="nav__item">
+          <NavLink to="/about" className="nav__link about-nav">About</NavLink>
+        </li>
+        <li className="nav__item">
+          <NavLink to="/projects" className="nav__link projects-nav">Projects</NavLink>
+        </li>
+        <li className="nav__item">
+          <NavLink to="/contact" className="nav__link contact-nav">Contact</NavLink>
+        </li>
+      </ul>
+      </nav>
+
   );
 }
 

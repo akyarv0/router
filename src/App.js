@@ -1,14 +1,12 @@
 import './App.scss';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Home from './pages/home/Home';
+import React from 'react';
+import Router from './router/Router';
+
 
 function App() {
   return (
    <div>
-   <Navbar />
-   <Home />
-   <Footer />
+   <Router />
   
 
    </div>

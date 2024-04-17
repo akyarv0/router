@@ -1,7 +1,8 @@
 //*****************************************************
 //*   CONTACT PAGE
 //*****************************************************
-
+@import '../../scss/_variables.scss';
+@import '../../scss/mixins.scss';
 .contact-bgImg-container{
     @include bgImg(100vh, $main-bgImg-path);
     nav{
@@ -12,7 +13,8 @@
 
 .contact{
     // border:2px solid red;
-    height: 40vh;
+    @include bgImg(100vh, $main-bgImg-path);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

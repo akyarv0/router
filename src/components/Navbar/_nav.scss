@@ -1,12 +1,25 @@
-
+@import '../../scss/_variables.scss';
+@import '../../scss/mixins.scss';
 
 .nav{
     // border: 2px solid red;
     height: 10vh;
     padding: 1rem;
+    position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+ color: $text-color;
+
+ 
+
+  padding: 10px;
+  z-index: 1000; /* Diğer elementlerin üstünde olması için z-index ayarı */
+
 
     &__list{
         text-align: right;
+     
     }
     &__item{
         display: inline;
@@ -17,17 +30,21 @@
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 500;
-        // font-family: $font-family;
+        font-family: $font-family;
         transition: all 1s;
-        // @include transition(1s);
+        @include transition(0.5s);
+        text-decoration: none;
+        color: $text-color;
 
+
+       
+        &--active{
+            color: $secondary-color;
+        }
 
         &:hover{
-            color: blue;
+            color: $secondary-color;
         }
-        // &--active{
-        //     color: $secondary-color;
-        // }
     }
 
 
