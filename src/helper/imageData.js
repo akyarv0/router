@@ -7,13 +7,13 @@ const data = [
     },
     {
         id:2,
-        img: 'https://m.media-amazon.com/images/M/MV5BOGExNzQ1NGItM2JlYy00ZmRkLTgwZjYtOTk4MjY0MGE1OWJkXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UY100_CR50,0,100,100_AL_.jpg',
+        img: 'https://cdn.pixabay.com/photo/2024/02/21/15/28/dahlia-8587940_1280.jpg',
         title: 'Project 2'
     },
 
     {
         id:3,
-        img: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY100_CR0,0,100,100_AL_.jpg',
+        img: 'https://media.istockphoto.com/id/153381618/tr/foto%C4%9Fraf/orange-dahlias-in-the-garden-among-other-flowers.jpg?s=612x612&w=is&k=20&c=mdJAKmffqeLDyPBSTReVC9VJlGTS2rDv0nEjTKMAino=',
         title: 'Project 3'
 
     },
