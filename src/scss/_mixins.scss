@@ -17,7 +17,7 @@
 }
 
 @mixin bgImg($height, $url) {
-  height: $height;
+  min-height: $height;
   width: 100%;
   background:linear-gradient(
       to right,
@@ -27,6 +27,7 @@
   url($url) ;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed; 
 }
 
 @mixin media-xsm {

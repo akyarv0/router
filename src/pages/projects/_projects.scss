@@ -3,7 +3,7 @@
 
 .projects {
     @include bgImg(100vh, $main-bgImg-path);
-    height: 100vh;
+    // height: 100vh;
 display: flex;
     flex-wrap: wrap;
     justify-content: center;
